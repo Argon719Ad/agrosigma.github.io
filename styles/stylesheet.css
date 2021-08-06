@@ -74,28 +74,31 @@ h1, h2 {
 }
 p { margin: 10px, 0px; font-size: 1.1rem;}
 img { width: 100%; }
-.header {
-	display: grid;
+header {
+	display: flex;
+	justify-content: space-between;
 }
-.header .grid-2 {
+header .grid-2 {
 	max-width: 100%;	
-	grid-template-columns: 7fr 10fr;
+	grid-template-columns: 5fr 10fr;
 }
-.header .navbar {
+header nav {
 	height: 120px;
+	padding: 50px;
 }
-.header .logo img {
-	width: 300px;
-	padding: 10px;
+header .logo img {
+	width: 150px;
+	padding: 20px;
 }
-.header .navbar ul { 
+header nav ul { 
 	display: flex; 
 	background-color: rgba(0, 0, 0, .1); 
+	padding: 10px;
 	border-radius: 20px; 
 }
-.header .navbar a {
+header nav a {
 	color: #111;
 	padding: 15px;
   	margin: 10px 5px;
 }
-.header .navbar a:hover { border-bottom: 2px #111 solid; }
+header nav a:hover { border-bottom: 2px #111 solid; }
