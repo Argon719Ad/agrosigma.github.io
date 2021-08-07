@@ -77,57 +77,83 @@ img { width: 100%; }
 header {
 	display: flex;
 	justify-content: space-between;
+	padding: 10px;
 }
-header .grid-2 {
-	max-width: 100%;	
-	grid-template-columns: 5fr 10fr;
+header .logo { height: 250px; }
+header .logo img {
+	width: 200px;
+	padding: 10px;
 }
 header nav {
-	height: 120px;
-	padding: 50px;
-}
-header .logo img {
-	width: 150px;
-	padding: 20px;
+	height: 50px;
+	padding: 80px;
 }
 header nav ul { 
 	display: flex; 
-	background-color: rgba(0, 0, 0, .1); 
+	background-color: rgba(132, 92, 0, .25); 
 	padding: 10px;
-	border-radius: 20px; 
+	border-radius: 15px; 
 }
 header nav a {
-	color: #111;
+	color: #845c00;
 	padding: 15px;
   	margin: 10px 5px;
 }
-header nav a:hover { border-bottom: 2px #111 solid; }
+header nav a:hover { border-bottom: 2px #845c00 solid; }
 main {
 	display: grid;
-	height: 300px;
-	grid-template-columns: 55% 45%;
-	position: relative;
-	gap: 10px;
+	padding: 20px;
+	width: 100%;
+	grid-template-columns: 55% 35%;
+	gap: 20px;
 	z-index: 1;
 	overflow: visible;
 }
-main h1 { font-size: 1.5rem; padding: 10px; }
-main p { font-size: 1.1rem; margin: 10px; }
-.showcase-form { width:100%; padding: 20px; }
-.showcase-text { padding: 10px; margin: 10px; padding-top: 80px; }
+main h1 { font-size: 1.5rem; padding-bottom: 20px; }
+main p { font-size: 1.1rem; }
+.showcase-form { text-align: center; padding: 20px; border: 2px #845c00 solid; border-radius: 10px; width: 100%; }
+.showcase-text { padding: 10px; margin: 10px; padding-top: 40px; }
 .form {
 	position: relative;
-	top: 50px;
+	top: 10px;
 	height: 100%;
 	width: 100%;
-	padding: 30px;
+	padding: 10px;
 }
-.form .form-control { margin: 25px 0; }
+.form p { font-size: 1.1rem; }
+.form .form-control { margin: 5px 0; }
 .form input[type=text], .form input[type=email], .form input[type=tel] {
   	border: 0;
 	border-bottom: 1px solid #b4becb;
         width: 100%;
-	padding: 3px;
+	padding: 10px;
 	font-size: 1.1rem;
 }
+.form .btn { 
+	    border: 0; 
+	    border-radius: 0px; 
+	    font-size: 1.1rem; 
+	    margin: 20px; 
+	    padding: 10px 25px; 
+	    background: rgba(132, 92, 0, .25);  
+}
 .form input:focus { outline: none; }
+.Owner { display: grid; grid-template-columns: 7fr 10fr; }
+.Owner .owner { align-items: left; }
+.Owner .card {
+	background-color: rgba(132, 92, 0, .25);
+	border-radius: 10px;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 10px;
+	color: #333;
+}
+.Owner .card { text-align: left;}
+.Owner .card img { width: 200px; border-radius: 20px;}
+footer .text-center {
+	text-align: center;
+	align-items: center;
+	width: 100%;
+	margin: 10px; 
+	padding: 10px;
+}
